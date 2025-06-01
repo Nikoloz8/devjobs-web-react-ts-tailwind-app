@@ -40,7 +40,7 @@ export default function RenderJobs({ form }: TRenderJobs) {
     return (
 
         filteredJobs.map((e, index) => {
-            return <div className={`w-[350px] mt-[30px]! rounded-[6px] bg-[#FFFFFF] p-[0_32px_32px_32px]! ${toggle ? "bg-[#19202D]!" : undefined}`} key={index}>
+            return <div className={`w-[350px] max-sm:w-[327px] mt-[30px]! rounded-[6px] bg-[#FFFFFF] p-[0_32px_32px_32px]! ${toggle ? "bg-[#19202D]!" : undefined}`} key={index}>
                 <div className={`mt-[-24px] mb-[24px] w-[50px] h-[50px] flex items-center justify-center rounded-[15px]`} style={{ backgroundColor: e.logoBackground }}>
                     <img src={e.logo} alt="" />
                 </div>

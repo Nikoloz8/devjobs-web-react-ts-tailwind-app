@@ -21,16 +21,16 @@ export default function FilterBar({ setForm }: ISetForm) {
             if (e.key === "Enter") {
                 setForm({ ...input, startSearch: true })
             }
-        }} className={`w-[100%] h-[80px] flex items-center p-[0_16px_0_16px] bg-[#FFFFFF] mt-[-40px] rounded-[6px] ${toggle ? "bg-[#121721]!" : undefined}`}>
-            <label htmlFor="search" className="h-[100%] w-[45%]! p-[0_16px_0_16px] gap-[24px] flex items-center">
+        }} className={`w-[100%] h-[80px] flex gap-[20px] max-md:m-[50px_0_50px_0]! items-center max-md:flex-col max-md:w-[100%] p-[0_16px_0_16px] bg-[#FFFFFF] mt-[-40px] rounded-[6px] ${toggle ? "bg-[#121721]!" : undefined}`}>
+            <label htmlFor="search" className="h-[100%] max-md:w-[100%]! max-lg:w-[33.3%]! w-[45%]! p-[0_16px_0_16px] gap-[24px] flex items-center">
                 <img src="/images/desktop/icon-search.svg" alt="" />
-                <input onChange={(e) => setInput({ ...input, search: e.target.value })} value={input.search} type="text" className={`outline-none ${toggle ? "text-[#FFFFFF]!" : undefined} w-[100%] caret-[#5964E0]! ${P}`} placeholder="Filter by title, companies, expertise…" name="" id="search" />
+                <input onChange={(e) => setInput({ ...input, search: e.target.value })} value={input.search} type="text" className={`outline-none placeholder:text-[gray] ${toggle ? "text-[#FFFFFF]!" : undefined} w-[100%] caret-[#5964E0]! ${P}`} placeholder="Filter by title, companies, expertise…" name="" id="search" />
             </label>
-            <label htmlFor="searchByLocation" className="w-[33%] border-[0_1px_0_1px] flex items-center p-[0_16px_0_16px] gap-[24px] border-solid border-[rgba(110,128,152,0.2)] h-[100%]">
+            <label htmlFor="searchByLocation" className="w-[33%] max-md:w-[100%]! max-md:border-none  max-lg:w-[33.3%]! border-[0_1px_0_1px] flex items-center p-[0_16px_0_16px] gap-[24px] border-solid border-[rgba(110,128,152,0.2)] h-[100%]">
                 <img src="/images/desktop/icon-location.svg" alt="" />
-                <input onChange={(e) => setInput({ ...input, searchByLocation: e.target.value })} value={input.searchByLocation} type="text" className={`outline-none ${toggle ? "text-[#FFFFFF]!" : undefined} w-[100%] caret-[#5964E0]! ${P}`} placeholder="Filter by location…" name="" id="searchByLocation" />
+                <input onChange={(e) => setInput({ ...input, searchByLocation: e.target.value })} value={input.searchByLocation} type="text" className={`outline-none ${toggle ? "text-[#FFFFFF]!" : undefined} w-[100%] caret-[#5964E0]! placeholder:text-[gray] ${P}`} placeholder="Filter by location…" name="" id="searchByLocation" />
             </label>
-            <div className="flex items-center justify-between h-[100%] p-[16px_0_16px_16px]! w-[32%]">
+            <div className="flex items-center max-md:w-[100%]! justify-between max-lg:w-[33.3%]! h-[100%] p-[16px_0_16px_16px]! w-[32%]">
                 <label htmlFor="check" className={`${P} ${toggle ? "text-[#FFFFFF]!" : undefined} flex gap-[12px] font-[700]`}>
                     <input onChange={(e) => setInput({ ...input, checked: e.target.checked })} checked={input.checked} type="checkbox" id="check" className="peer hidden" />
                     <div className="w-[24px] peer-checked:bg-[url('/images/desktop/icon-check.svg')] bg-center bg-no-repeat peer-checked:bg-[#5964E0] h-[24px] bg-[rgba(110,128,152,0.2)] rounded-[3px]">

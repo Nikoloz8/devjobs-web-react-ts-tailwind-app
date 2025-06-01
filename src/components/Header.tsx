@@ -7,8 +7,8 @@ export default function Header() {
 
 
     return (
-        <header className="w-[100%] p-[0_50px_0_50px] rounded-[0_0_0_100px] min-h-[160px] bg-[url('/images/desktop/bg-pattern-header.svg')] bg-no-repeat bg-center bg-cover max-lg:bg-[url('/images/tablet/bg-pattern-header.svg')] max-sm:bg-[url('/images/mobile/bg-pattern-header.svg')] max-sm:rounded-[0]! max-sm:h-[136px] flex items-center justify-center">
-            <div className="w-[1110px] max-xl:w-[100%] flex justify-between">
+        <header className="w-[100%] max-sm:items-start p-[0_50px_0_50px] max-sm:p-[0_30px_0_30px]! rounded-[0_0_0_100px] min-h-[160px] bg-[url('/images/desktop/bg-pattern-header.svg')] bg-no-repeat bg-center bg-cover max-lg:bg-[url('/images/tablet/bg-pattern-header.svg')] max-sm:bg-[url('/images/mobile/bg-pattern-header.svg')] max-sm:rounded-[0]! max-sm:h-[136px] flex items-center justify-center">
+            <div className="w-[1110px] max-xl:w-[100%] max-sm:mt-[40px]! flex justify-between">
                 <img onClick={() => navigate("/home")} className="cursor-pointer" src="/images/desktop/logo.svg" alt="" />
                 <div className="flex gap-[16px] items-center">
                     <img src="/images/desktop/icon-sun.svg" alt="" />
