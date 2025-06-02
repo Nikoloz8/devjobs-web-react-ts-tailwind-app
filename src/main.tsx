@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from './pages/Layout'
+import Layout from './layouts/Layout'
 import Home from './pages/Home'
 import Details from './pages/Details'
 
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         element: <Home />,
-        path: "/home"
+        path: "/"
       },
       {
         element: <Details />,

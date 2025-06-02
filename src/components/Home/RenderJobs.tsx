@@ -2,7 +2,7 @@ import { useContext } from "react"
 import data from "../../../data.json"
 import tailwind from "../../shared/tailwind"
 import type { TRenderJobs } from "../../types"
-import { Context } from "../../pages/Layout"
+import { Context } from "../../layouts/Layout"
 
 export default function RenderJobs({ form }: TRenderJobs) {
 

@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import data from "../../../data.json"
 import tailwind from "../../shared/tailwind"
 import { useContext } from "react"
-import { Context } from "../../pages/Layout"
+import { Context } from "../../layouts/Layout"
 
 export default function DetailsWebsite() {
 

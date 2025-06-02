@@ -16,7 +16,7 @@ export default function Layout() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        navigate("/home")
+        navigate("/")
     }, [])
 
     const location = useLocation().pathname

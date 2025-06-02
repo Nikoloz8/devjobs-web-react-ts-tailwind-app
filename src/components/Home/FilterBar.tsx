@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
 import tailwind from "../../shared/tailwind"
 import type { ISetForm } from "../../types"
-import { Context } from "../../pages/Layout"
+import { Context } from "../../layouts/Layout"
 
 
 export default function FilterBar({ setForm }: ISetForm) {
